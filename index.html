@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Dydarling"/>
+        <meta property="og:description" content="A hideout"/>
+        <meta property="og:url" content="https://dydarling.github.io"/>
+
+        <title> Duy's personal website. </title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/web_logo.png" width="64px" height="64px"/>
+		<link rel="stylesheet" media="(min-width: 1000px)" type="text/css" href="./medium.css">
+        <link rel="stylesheet" media="(max-width: 1000px)" type="text/css" href="./small.css"> 
+        <link rel="preconnect" href="https://fonts.bunny.net"/>
+        <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700|jetbrains-mono:300,400,500,600,700" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="box">
+                <img id="avatar" src="./assets/avatar/avatar.jpg">
+
+                <div id="content">
+                    <div id="button">
+                        <button id="toggle-button" class="left"> </button>
+                    </div>
+                    <p id="name"> Dydarling </p>
+
+                    <div id="article">
+
+                        <div id="line"> </div>
+
+                        <div id="job">
+                            <p> 🎓 Student </p>
+                            <p> 🗺️ Vietnam </p>
+                        </div>
+
+                        <p class="des"> Hi! I'm Duy. </p>
+                        <p class="des"> Language: C++, Python. </p>
+
+                        <div id="contact">
+                            <a href="https://github.com/DyDarling" target="_blank"> 
+                                <img class="icon" src="./assets/avatar/github.png"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100031637343105" target="_blank">
+                                <img class="icon" src="./assets/avatar/facebook.png"></a>
+                            <a href="https://www.roblox.com/users/371350105/profile" target="_blank">
+                                <img class="icon" src="./assets/avatar/roblox.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const Button = document.getElementById("button")
+            const Toggle = document.getElementById("toggle-button");
+            const body = document.body;
+
+            Button.addEventListener("click", () => {
+                body.classList.toggle("light-mode");
+                Toggle.classList.toggle("light-mode");
+            });
+
+            if (Toggle.classList.contains("left"))
+            {
+                Toggle.classList.remove("left");
+                Toggle.classList.add("right");
+            } 
+            else
+            {
+                Toggle.classList.remove("right");
+                Toggle.classList.add("left");
+            }
+        </script>
+    </body>
+</html>
