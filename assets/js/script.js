@@ -42,7 +42,7 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Portfolio | Duy Nguyen";
-            $("#favicon").attr("href", "assets/images/favicon.PNG");
+            $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
             document.title = "Come Back To Portfolio";
